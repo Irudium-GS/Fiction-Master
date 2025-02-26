@@ -67,7 +67,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Newsletter */}
+
           <div>
             <h3 className="text-lg font-semibold mb-4 text-white">Newsletter</h3>
             <p className="text-sm mb-4">Subscribe to our newsletter for updates</p>
@@ -87,7 +87,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Copyright */}
+
         <div className="border-t border-gray-800 mt-12 pt-8 text-center">
           <p className="text-sm">
             © {new Date().getFullYear()} Fiction Master. All rights reserved.

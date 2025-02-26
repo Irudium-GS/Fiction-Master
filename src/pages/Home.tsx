@@ -10,7 +10,7 @@ import Linux from '../components/Assets/Linux.jpg';
 const Home = () => {
   return (
     <div>
-      {/* Hero Section */}
+
       <motion.section
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -73,7 +73,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* About Section */}
+
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -124,7 +124,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Services Section */}
+
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">

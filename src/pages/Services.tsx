@@ -5,7 +5,7 @@ import { BookOpen, Edit, Users, Video, MessageSquare, Award } from 'lucide-react
 const Services = () => {
   return (
     <div className="pt-16">
-      {/* Hero Section */}
+
       <section className="relative py-20 bg-gradient-to-br from-red-900 via-gray-900 to-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -22,7 +22,6 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Services Grid */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -83,7 +82,6 @@ const Services = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
       <section className="py-16 bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">

@@ -41,7 +41,7 @@ const Navbar = () => {
             <h3 className="text-base sm:text-lg lg:text-3xl font-extrabold text-gray-300 pl-4 ">Fiction Master</h3>
           </Link>
 
-          {/* Desktop Navigation */}
+
           <div className="hidden md:flex space-x-8">
             {navLinks.map((link) => (
               <Link
@@ -58,7 +58,7 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* Mobile Navigation Button */}
+
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -69,7 +69,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Mobile Navigation Menu */}
+
         {isOpen && (
           <motion.div
             initial={{ opacity: 0, y: -20 }}

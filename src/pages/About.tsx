@@ -8,7 +8,7 @@ import profile from '../components/Assets/Profile.jpg';
 const About = () => {
   return (
     <div className="pt-16">
-      {/* Hero Section */}
+
       <section className="relative py-20 bg-gradient-to-br from-red-900 via-gray-900 to-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -24,7 +24,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Mission & Vision */}
+
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -58,7 +58,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Team Section */}
+
       <section className="py-16 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center mb-12">Our Expert Team</h2>
@@ -112,7 +112,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Values */}
+
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center mb-12">Our Values</h2>
