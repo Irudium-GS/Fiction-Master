@@ -49,6 +49,7 @@ const Footer = () => {
                 <a href="https://wa.me/917397273994" className="text-gray-300 hover:underline">
                   +91 739 727 3994
                 </a>
+                <br/>
                 <a href="https://wa.me/918883289332" className="text-gray-300 hover:underline">
                 +91 888 328 9332
                 </a>
