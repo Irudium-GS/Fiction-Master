@@ -80,6 +80,11 @@ const About = () => {
                 image: profile,
               },
               {
+                name: 'Mrs. Anuprabha Baskaran',
+                role: 'UI/UX Designer',
+                image: profile,
+              },
+              {
                 name: 'Gopi Shankar V',
                 role: 'Full Stack Developer',
                 image: profile,
