@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { BookOpen, Users, Award, Star, Pen, Target, BookCheck, Brain, Coffee, Sparkles } from 'lucide-react';
+import { Code, PencilRuler, ShoppingBag, Truck, Newspaper, BookOpen, Users, Award, Star, Target, Brain } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import aboutImg from '../components/Assets/AboutUs.jpg'
 import AI from '../components/Assets/AI.jpg';
@@ -91,7 +91,7 @@ const Home = () => {
                 {[
                   { icon: Target, text: 'Personalized learning paths tailored to your career goals' },
                   { icon: Brain, text: 'Expert instructors with real-world industry experience' },
-                  { icon: Coffee, text: 'A collaborative and engaging community to support your journey' },
+                  { icon: Users, text: 'A collaborative and engaging community to support your journey' },
                 ].map((item, index) => (
                   <div key={index} className="flex items-center space-x-3">
                     <item.icon className="w-6 h-6 text-red-600" />
@@ -137,27 +137,27 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                icon: Pen,
+                icon: Code,
                 title: 'Full Stack Development',
                 description: 'Master the art of web development with our comprehensive Full Stack Development course. Learn HTML, CSS, JavaScript, React.js, Node.js, Express.js, MongoDB, and MySQL. Build real-world projects and become a job-ready full-stack developer.',
               },
               {
-                icon: BookCheck,
+                icon: PencilRuler,
                 title: 'UI/UX Designs',
                 description: 'Gain expertise in User Interface (UI) and User Experience (UX) Design with practical, industry-standard tools like Figma, Adobe XD, and Sketch. Learn how to design engaging, accessible, and visually appealing web and mobile applications.',
               },
               {
-                icon: Users,
+                icon: Newspaper,
                 title: 'Digital Marketing',
                 description: 'Master the art of SEO, social media marketing, Google Ads, and content marketing to grow businesses online. Get hands-on training in analytics, strategy building, and campaign management.',
               },
               {
-                icon: BookOpen,
+                icon: ShoppingBag,
                 title: 'E-Commerce Solutions',
                 description: 'Start your own E-commerce business with our step-by-step course. Learn how to create, optimize, and manage online stores using Shopify, WooCommerce, and custom-built solutions.',
               },
               {
-                icon: Star,
+                icon: Truck,
                 title: 'Drop Shipping',
                 description: 'Learn how to set up and run a profitable drop shipping business with minimal investment. Understand supplier selection, automation tools, and customer engagement techniques to succeed in the e-commerce industry.',
               },

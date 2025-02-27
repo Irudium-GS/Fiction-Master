@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { BookOpen, Edit, Users, Video, MessageSquare, Award } from 'lucide-react';
+import { Code, PencilRuler, ShoppingBag, Truck, Newspaper,  } from 'lucide-react';
 
 const Services = () => {
   return (
@@ -27,31 +27,31 @@ const Services = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                icon: BookOpen,
+                icon: Code,
                 title: 'Full Stack Development',
                 description: 'Master HTML, CSS, JavaScript, React, Node.js, Express, MongoDB, and MySQL to build full-stack web applications. Gain hands-on experience with real-world projects.',
                 features: ['Hands-on projects', 'Frontend & Backend mastery', ' Database integration & API development', 'Deployment & DevOps basics'],
               },
               {
-                icon: Edit,
+                icon: PencilRuler,
                 title: 'UI/UX Designs',
                 description: 'Learn Figma, Adobe XD, wireframing, prototyping, and user research to create stunning and user-friendly designs for web and mobile applications.',
                 features: ['Wireframing & Prototyping', 'Color theory & typography', 'User research & testing', 'Responsive & interactive designs'],
               },
               {
-                icon: Users,
+                icon: Newspaper,
                 title: 'Digital Marketing',
                 description: 'Become an expert in SEO, social media marketing, Google Ads, and content marketing to grow businesses online with data-driven strategies.',
                 features: ['SEO & keyword optimization', 'Social media strategies', 'Social media strategies', 'Email marketing & automation'],
               },
               {
-                icon: Video,
+                icon: ShoppingBag,
                 title: 'E-Commerce Solution',
                 description: 'Build and manage online stores with Shopify, WooCommerce, and custom solutions while learning marketing, payment integration, and inventory management.',
                 features: ['Store setup & product listing', 'Payment gateway integration', 'Marketing & sales strategies', 'Inventory & order management'],
               },
               {
-                icon: MessageSquare,
+                icon: Truck,
                 title: 'Drop Shipping',
                 description: 'Start a low-investment e-commerce business with product sourcing, automation tools, and effective marketing strategies.',
                 features: ['Product sourcing & selection', 'Building & scaling an online store', 'Marketing automation & customer retention', 'Maximizing profits with low investment'],
