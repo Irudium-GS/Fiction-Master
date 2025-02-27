@@ -1,9 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { BookOpen, Target, Users, Award } from 'lucide-react';
-import profile from '../components/Assets/Profile.jpg';
-// import md from '../components/Assets/MD.jpg';
-// import FullStackDev from '../components/Assets/FullStackDev.jpg'
+import PC from './PC'
 
 const About = () => {
   return (
@@ -58,60 +56,7 @@ const About = () => {
         </div>
       </section>
 
-
-      <section className="py-16 bg-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12">Our Expert Team</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                name: 'Mr. Shyed Azarudeen',
-                role: 'Founder',
-                image: profile,
-              },
-              {
-                name: 'Mr. Mohammed Safiullah',
-                role: 'Managing Director',
-                image: profile,
-              },
-              {
-                name: 'Ms. Sandhya',
-                role: 'Software Developer',
-                image: profile,
-              },
-              {
-                name: 'Ms. Anuprabha Baskaran',
-                role: 'UI/UX Designer',
-                image: profile,
-              },
-              {
-                name: 'Gopi Shankar V',
-                role: 'Full Stack Developer',
-                image: profile,
-              },
-            ].map((member, index) => (
-              <motion.div
-                key={member.name}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
-                className="bg-white rounded-lg shadow-lg overflow-hidden"
-              >
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className="w-full h-64 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">{member.name}</h3>
-                  <p className="text-red-600 mb-3">{member.role}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
+      <PC/>
 
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
