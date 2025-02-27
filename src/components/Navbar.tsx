@@ -37,7 +37,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center">
-            <img src= {logo} alt="Fiction Master" className="h-7 w-auto sm:w-auto sm:h-7 lg:w-auto lg:h-10 rounded-md"/>
+            <img src= {logo} alt="Fiction Master" className="h-7 w-auto sm:w-auto sm:h-7 lg:w-auto lg:h-10"/>
             <h3 className="text-base sm:text-lg lg:text-3xl font-extrabold text-gray-300 pl-4 ">Fiction Master</h3>
           </Link>
 
