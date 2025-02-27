@@ -24,7 +24,7 @@ function PC() {
       id: 2,
       name: 'Mohammed Safiullah',
       designation: 'Managing Director',
-      imageUrl: md,
+      imageUrl: profile,
       socialLinks: {
         whatsapp: 'https://wa.me/8883289332',
         linkedin: 'https://linkedin.com/in/',
@@ -60,7 +60,7 @@ function PC() {
         id: 5,
         name: 'Gopi Shankar',
         designation: 'Full Stack Developer',
-        imageUrl: FullStackDev,
+        imageUrl: profile,
         socialLinks: {
           whatsapp: 'https://wa.me/7904378166',
           linkedin: 'https://linkedin.com/in/gopi-shankar-v',
