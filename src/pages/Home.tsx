@@ -54,7 +54,7 @@ const Home = () => {
             {[
               { icon: BookOpen, label: 'Courses', value: '5+' },
               { icon: Users, label: 'Students', value: '10+' },
-              { icon: Award, label: 'Awards', value: '3+' },
+              { icon: Award, label: 'Awards', value: '0' },
               { icon: Star, label: 'Rating', value: '4.9/5' },
             ].map((stat, index) => (
               <motion.div
@@ -194,17 +194,17 @@ const Home = () => {
               {
                 title: 'Artificial Intelligent & ML',
                 image: AI,
-                price: '$99',
+                //price: '$99',
               },
               {
                 title: 'Linux Administrator',
                 image: Linux,
-                price: '$149',
+                //price: '$149',
               },
               {
                 title: 'Cyber Security',
                 image: Cyber,
-                price: '$79',
+                //price: '$79',
               },
             ].map((course, index) => (
               <motion.div
