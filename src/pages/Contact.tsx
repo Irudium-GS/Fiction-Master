@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Clock } from 'lucide-react';
+import whatsapp from '../components/Assets/whatsapp.svg'
 
 const Contact = () => {
   return (
@@ -106,10 +107,14 @@ const Contact = () => {
                     <Phone className="w-6 h-6 text-red-600 mr-4 mt-1" />
                     <div>
                       <h3 className="font-semibold">Call Us</h3>
-                      <a href="https://wa.me/917397273994" className="text-gray-600">+91 739 727 3994</a>
-                      <br />
-                      <a href="https://wa.me/918883289332" className="text-gray-600">+91 888 328 9332</a>    
-                  
+                      <a href="tel:+919790306367" className="text-gray-600">+91 979 030 6367</a>   
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <img src={whatsapp} className="w-6 h-6 text-red-600 mr-4 mt-1" />
+                    <div>
+                      <h3 className="font-semibold">Chat Us</h3>
+                      <a href="https://wa.me/917397273994" className="text-gray-600">+91 739 727 3994</a>   
                     </div>
                   </div>
                   <div className="flex items-start">
