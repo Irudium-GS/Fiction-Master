@@ -34,7 +34,7 @@ const Home = () => {
             transition={{ delay: 0.4 }}
             className="text-xl text-gray-300 mb-8"
           >
-            Unlock Your Creative Potential with Our Expert-Led Courses
+            At Fiction Master, we craft compelling digital experiences through expert digital marketing, social media mastery, standout branding, and stunning graphic design bringing your vision to life in the digital world.
           </motion.p>
           <motion.div
             initial={{ y: 20, opacity: 0 }}
@@ -83,15 +83,17 @@ const Home = () => {
               viewport={{ once: true }}
               className="space-y-6"
             >
-              <h2 className="text-4xl font-bold text-gray-900">Empowering Learners to Achieve Their Goals</h2>
+              <h2 className="text-4xl font-bold text-gray-900">Empowering Brands to Achieve Their Goals</h2>
               <p className="text-lg text-gray-600">
-              At Fiction Master, we are committed to providing top-quality education that equips learners with practical skills for the real world. Our mission is to empower students through expert-led courses, hands-on projects, and a supportive learning environment that fosters growth and innovation.
-              </p>
+                  At Fiction Master, we go beyond education—we specialize in <b>digital marketing, social media management, branding, and graphic design</b> to help businesses and individuals establish a strong online presence. 
+                  Our expert team delivers tailored strategies, creative designs, and innovative solutions to make your brand stand out in the digital world.
+</p>
+
               <div className="space-y-4">
                 {[
-                  { icon: Target, text: 'Personalized learning paths tailored to your career goals' },
-                  { icon: Brain, text: 'Expert instructors with real-world industry experience' },
-                  { icon: Users, text: 'A collaborative and engaging community to support your journey' },
+                  { icon: Target, text: 'Strategic digital marketing to boost brand visibility' },
+                  { icon: Brain, text: 'Creative branding and eye-catching graphic designs' },
+                  { icon: Users, text: 'Effective social media management to grow engagement' },
                 ].map((item, index) => (
                   <div key={index} className="flex items-center space-x-3">
                     <item.icon className="w-6 h-6 text-red-600" />
