@@ -4,13 +4,18 @@ import { Clock, Users, Star, BookOpen, ShoppingCart } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 import { Product } from '../types/';
 import { toast } from 'react-hot-toast';
+import FullStack from '../components/Assets/Full-Stack.jpg'
+import Ecommerce from '../components/Assets/E-commerce.jpg'
+import UI from '../components/Assets/UI-Design.jpg'
+import DropShip from '../components/Assets/Shipping.jpg'
+import DigitalMarket from '../components/Assets/Digital-Marketing.jpg'
 
 // Import images
-const FullStack = 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80';
-const Ecommerce = 'https://images.unsplash.com/photo-1556742031-c6961e8560b0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80';
-const UI = 'https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80';
-const DropShip = 'https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80';
-const DigitalMarket = 'https://images.unsplash.com/photo-1533750349088-cd871a92f312?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80';
+// const FullStack = 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80';
+// const Ecommerce = 'https://images.unsplash.com/photo-1556742031-c6961e8560b0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80';
+// const UI = 'https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80';
+// const DropShip = 'https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80';
+// const DigitalMarket = 'https://images.unsplash.com/photo-1533750349088-cd871a92f312?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80';
 
 const booksData = [
   {
