@@ -43,7 +43,7 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-center">
                 <MapPin size={20} className="mr-2 text-red-500" />
-                Erode & Tiruppur
+                 Tiruppur
               </li>
               <li className="flex items-center">
                 <img src={whatsapp} className="w-5 h-5 mr-2" alt="WhatsApp" />

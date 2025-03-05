@@ -98,7 +98,6 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold">Visit Us</h3>
                       <p className="text-gray-600">
-                        Erode<br />
                         Tiruppur
                       </p>
                     </div>

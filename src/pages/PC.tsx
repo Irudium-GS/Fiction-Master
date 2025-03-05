@@ -1,8 +1,8 @@
 import React from 'react';
 import ProfileCard from '../components/ProfileCard';
 import profile from '../components/Assets/Profile.jpg';
-//import md from '../components/Assets/MD.jpg';
-//import FullStackDev from '../components/Assets/FullStackDev.jpg'
+import md from '../components/Assets/MD.jpg';
+import FullStackDev from '../components/Assets/FullStackDev.jpg'
 
 function PC() {
   // Sample employee data
