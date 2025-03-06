@@ -15,7 +15,8 @@ const Cart: React.FC = () => {
     alert('Razorpay integration will be implemented here');
     
     // Actual Razorpay implementation would look something like:
-    /*
+    //rzp_test_RuqWbrMnU12xl3
+    //QBVtDB1rr4MitPpWo2Qy9wFf
     const options = {
       key: 'YOUR_RAZORPAY_KEY',
       amount: totalAmount * 100, // Razorpay expects amount in paise
@@ -37,7 +38,7 @@ const Cart: React.FC = () => {
     
     const razorpay = new (window as any).Razorpay(options);
     razorpay.open();
-    */
+    
   };
 
   return (
