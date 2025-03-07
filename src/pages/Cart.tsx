@@ -4,42 +4,47 @@ import { Link } from 'react-router-dom';
 import { Trash2, Plus, Minus, ShoppingBag } from 'lucide-react';
 import { motion } from 'framer-motion';
 
+
 const Cart: React.FC = () => {
   const { items, totalAmount, removeFromCart, updateQuantity } = useCart();
 
-  const handleRazorpayPayment = () => {
+  const handleRazorpayPayment = async () => {
     if (items.length === 0) return;
-    
-    // This is where you would integrate with Razorpay
-    // For now, we'll just show an alert
-    alert('Razorpay integration will be implemented here');
-    
-    // Actual Razorpay implementation would look something like:
-    //rzp_test_RuqWbrMnU12xl3
-    //QBVtDB1rr4MitPpWo2Qy9wFf
+
+    console.log("Total Amount:", totalAmount);
+
+    const response = await fetch("http://localhost:5000/create-order", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ amount: totalAmount }),
+    });
+
+    const orderData = await response.json();
+    console.log("Order Data:", orderData);
+
     const options = {
-      key: 'YOUR_RAZORPAY_KEY',
-      amount: totalAmount * 100, // Razorpay expects amount in paise
-      currency: 'INR',
-      name: 'BookStore',
-      description: 'Purchase of digital books',
-      handler: function(response: any) {
-        // Handle successful payment
-        console.log(response);
-      },
-      prefill: {
-        name: 'Customer Name',
-        email: 'customer@example.com',
-      },
-      theme: {
-        color: '#9C1A1C',
-      },
+        key: "rzp_test_WnSICWUDdAgT2W",
+        amount: orderData.amount,
+        currency: orderData.currency,
+        name: "BookStore",
+        description: "Purchase of digital books",
+        order_id: orderData.id,
+        handler: function (response: any) {
+            console.log("Payment Successful:", response);
+        },
+        prefill: {
+            name: "Customer Name",
+            email: "customer@example.com",
+        },
+        theme: { color: "#9C1A1C" },
     };
-    
+
     const razorpay = new (window as any).Razorpay(options);
     razorpay.open();
-    
-  };
+};
+
 
   return (
     <div className="pt-20 pb-16">
