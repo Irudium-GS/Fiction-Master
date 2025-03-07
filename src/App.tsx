@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -14,9 +14,9 @@ import { CartProvider } from './context/CartContext';
 import  Education  from './pages/Education';
 import  DigitalMarket  from './pages/ DigitalMarketing';
 
-import Dashboard from './components/Dashboard';
-import DashboardHome from './pages/DashboardHome';
-import ProfilePage from './pages/ProfilePage';
+// import Dashboard from './components/Dashboard';
+// import DashboardHome from './pages/DashboardHome';
+// import ProfilePage from './pages/ProfilePage';
 
 function App() {
   return (
