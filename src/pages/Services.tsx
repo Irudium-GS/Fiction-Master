@@ -1,100 +1,112 @@
 import React from 'react';
+import { Monitor, Globe, Palette, Layout } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { Code, PencilRuler, ShoppingBag, Truck, Newspaper,  } from 'lucide-react';
 
-const Services = () => {
+export default function Services() {
   return (
     <div className="pt-16">
-
-      <section className="relative py-20 bg-gradient-to-br from-red-900 via-gray-900 to-black">
+      {/* Hero Section */}
+      <section className="relative py-20 bg-gradient-to-r from-red-600 to-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-center"
-          >
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">Our Services</h1>
+            className="text-center">
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+            IT Solutions
+            </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            we provide industry-focused courses designed to help you master in-demand skills. 
-            our hands-on training and expert guidance will set you on the path to success. 
+            Comprehensive IT solutions to drive your business forward in the digital age
             </p>
           </motion.div>
         </div>
       </section>
 
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                icon: Code,
-                title: 'Full Stack Development',
-                description: 'Master HTML, CSS, JavaScript, React, Node.js, Express, MongoDB, and MySQL to build full-stack web applications. Gain hands-on experience with real-world projects.',
-                features: ['Hands-on projects', 'Frontend & Backend mastery', ' Database integration & API development', 'Deployment & DevOps basics'],
-              },
-              {
-                icon: PencilRuler,
-                title: 'UI/UX Designs',
-                description: 'Learn Figma, Adobe XD, wireframing, prototyping, and user research to create stunning and user-friendly designs for web and mobile applications.',
-                features: ['Wireframing & Prototyping', 'Color theory & typography', 'User research & testing', 'Responsive & interactive designs'],
-              },
-              {
-                icon: Newspaper,
-                title: 'Digital Marketing',
-                description: 'Become an expert in SEO, social media marketing, Google Ads, and content marketing to grow businesses online with data-driven strategies.',
-                features: ['SEO & keyword optimization', 'Social media strategies', 'Social media strategies', 'Email marketing & automation'],
-              },
-              {
-                icon: ShoppingBag,
-                title: 'E-Commerce Solution',
-                description: 'Build and manage online stores with Shopify, WooCommerce, and custom solutions while learning marketing, payment integration, and inventory management.',
-                features: ['Store setup & product listing', 'Payment gateway integration', 'Marketing & sales strategies', 'Inventory & order management'],
-              },
-              {
-                icon: Truck,
-                title: 'Drop Shipping',
-                description: 'Start a low-investment e-commerce business with product sourcing, automation tools, and effective marketing strategies.',
-                features: ['Product sourcing & selection', 'Building & scaling an online store', 'Marketing automation & customer retention', 'Maximizing profits with low investment'],
-              },
-            ].map((service, index) => (
-              <motion.div
-                key={service.title}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
-                className="bg-white rounded-lg shadow-lg p-6"
-              >
-                <service.icon className="w-12 h-12 text-red-600 mb-4" />
-                <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
-                <p className="text-gray-600 mb-4">{service.description}</p>
-                <ul className="space-y-2">
-                  {service.features.map((feature) => (
-                    <li key={feature} className="flex items-center text-gray-600">
-                      <span className="w-2 h-2 bg-red-600 rounded-full mr-2" />
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-                <button className="mt-6 w-full btn btn-primary">Learn More</button>
-              </motion.div>
-            ))}
+      {/* Services Grid */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-8">
+            <ServiceCard
+              icon={<Globe className="w-12 h-12" />}
+              title="Digital Marketing Strategy"
+              description="Develop comprehensive digital marketing strategies tailored to your business goals and target audience."
+              features={[
+                "Market Research & Analysis",
+                "Competitor Analysis",
+                "Target Audience Identification",
+                "ROI-focused Campaigns"
+              ]}
+            />
+
+            <ServiceCard
+              icon={<Monitor className="w-12 h-12" />}
+              title="Social Media Management"
+              description="Expert social media management to boost your brand's online presence and engagement."
+              features={[
+                "Content Creation & Curation",
+                "Community Management",
+                "Analytics & Reporting",
+                "Campaign Management"
+              ]}
+            />
+
+            <ServiceCard
+              icon={<Layout className="w-12 h-12" />}
+              title="Brand Development"
+              description="Create and evolve your brand identity to stand out in today's competitive market."
+              features={[
+                "Brand Strategy",
+                "Visual Identity Design",
+                "Brand Guidelines",
+                "Brand Voice Development"
+              ]}
+            />
+
+            <ServiceCard
+              icon={<Palette className="w-12 h-12" />}
+              title="Graphic Design Services"
+              description="Professional graphic design services to enhance your visual communication."
+              features={[
+                "Logo Design",
+                "Marketing Materials",
+                "Social Media Graphics",
+                "Website Design"
+              ]}
+            />
           </div>
         </div>
       </section>
 
-      <section className="py-16 bg-gray-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h2 className="text-3xl font-bold text-white mb-6">Ready to Start Your Journey?</h2>
-            <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-              Join Fiction Master today and take the first step towards becoming the writer you've always wanted to be.
-            </p>
-            <button className="btn btn-primary text-lg px-8 py-3">Get Started Now</button>
-          </div>
+      {/* CTA Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-8">Ready to Transform Your Business?</h2>
+          <p className="text-xl text-gray-600 mb-8">
+            Let's discuss how our IT solutions can help you achieve your business goals
+          </p>
+          <button className="bg-red-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors duration-300">
+            Get Started
+          </button>
         </div>
       </section>
     </div>
   );
-};
+}
 
-export default Services;
+function ServiceCard({ icon, title, description, features }) {
+  return (
+    <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+      <div className="text-red-600 mb-6">{icon}</div>
+      <h3 className="text-2xl font-bold mb-4">{title}</h3>
+      <p className="text-gray-600 mb-6">{description}</p>
+      <ul className="space-y-3">
+        {features.map((feature, index) => (
+          <li key={index} className="flex items-center text-gray-700">
+            <span className="w-2 h-2 bg-red-600 rounded-full mr-3"></span>
+            {feature}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}

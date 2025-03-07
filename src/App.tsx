@@ -11,6 +11,8 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Cart from './pages/Cart'
 import { CartProvider } from './context/CartContext';
+import  Education  from './pages/Education';
+import  DigitalMarket  from './pages/ DigitalMarketing';
 
 import Dashboard from './components/Dashboard';
 import DashboardHome from './pages/DashboardHome';
@@ -27,11 +29,13 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/Download" element={<Download />} />
+          <Route path="/download" element={<Download />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/education" element={ <Education/> }/>
+          <Route path="/digitalMarketing" element={ <DigitalMarket/> }/>
 
           {/* Dashboard Routes (Nested) */}
           {/* <Route path="/dashboard" element={<Dashboard/>}>

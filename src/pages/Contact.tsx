@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <div className="pt-16">
       
-      <section className="relative py-20 bg-gradient-to-br from-red-900 via-gray-900 to-black">
+      <section className="relative py-20 bg-gradient-to-r from-red-600 to-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
