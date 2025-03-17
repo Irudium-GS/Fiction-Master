@@ -77,12 +77,12 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          {/* <div className="md:hidden flex items-center space-x-4">
-            <CartIcon />
+          <div className="md:hidden flex items-center space-x-4">
+            {/* <CartIcon /> */}
             <button onClick={() => setIsOpen(!isOpen)} className="text-gray-300 hover:text-red-400">
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
-          </div> */}
+          </div> 
         </div>
 
         {/* Mobile Menu (Login button removed) */}
