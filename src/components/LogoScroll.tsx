@@ -3,25 +3,24 @@ import React from 'react';
 import { Construction, Hammer, Clock } from 'lucide-react';
 
 import Logo1 from "./Assets/A1_Construction.png";
-import Logo2 from "./Assets/AI.jpg";
-import Logo3 from "./Assets/Logo_Full.png";
-import Logo4 from "./Assets/Mr_Lion_Logo_Final.png";
-import Logo5 from "./Assets/NILE.jpg";
-import Logo6 from "./Assets/Shas_Attar_Final.png";
-import Logo7 from "./Assets/SHAS.jpg";
-import Logo8 from "./Assets/aarudra_2_finAL.png";
-import Logo9 from "./Assets/abdul_gani..jpg";
-import Logo10 from "./Assets/afra.jpg";
-import Logo11 from "./Assets/american.jpg";
-import Logo12 from "./Assets/asq.jpg";
-import Logo13 from "./Assets/birdie.jpg";
-import Logo14 from "./Assets/captain.jpg";
-import Logo15 from "./Assets/frames_hub.jpg";
-import Logo16 from "./Assets/komatha.jpg";
-import Logo17 from "./Assets/moonwalker.jpg";
-import Logo18 from "./Assets/rey_drone_logo_1.png";
-import Logo19 from "./Assets/Sm_Dresses_Logo.png";
-import Logo20 from "./Assets/Sm_Dresses_Ok.png";
+import Logo2 from "./Assets/Logo_Full.png";
+import Logo3 from "./Assets/Mr_Lion_Logo_Final.png";
+import Logo4 from "./Assets/NILE.jpg";
+import Logo5 from "./Assets/Shas_Attar_Final.png";
+import Logo6 from "./Assets/SHAS.jpg";
+import Logo7 from "./Assets/aarudra_2_finAL.png";
+import Logo8 from "./Assets/abdul_gani..jpg";
+import Logo9 from "./Assets/afra.jpg";
+import Logo10 from "./Assets/american.jpg";
+import Logo11 from "./Assets/asq.jpg";
+import Logo12 from "./Assets/birdie.jpg";
+import Logo13 from "./Assets/captain.jpg";
+import Logo14 from "./Assets/frames_hub.jpg";
+import Logo15 from "./Assets/komatha.jpg";
+import Logo16 from "./Assets/moonwalker.jpg";
+import Logo17 from "./Assets/rey_drone_logo_1.png";
+import Logo18 from "./Assets/Sm_Dresses_Logo.png";
+import Logo19 from "./Assets/Sm_Dresses_Ok.png";
 function BrandScroller() {
   const brands = [
     { name: "Brand 1", url: Logo1 },
@@ -43,7 +42,6 @@ function BrandScroller() {
     { name: "Brand 17", url: Logo17 },
     { name: "Brand 18", url: Logo18 },
     { name: "Brand 19", url: Logo19 },
-    { name: "Brand 20", url: Logo20 },
   ];
 
   const BrandRow = () => (

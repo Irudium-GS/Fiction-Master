@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Linkedin, Instagram, Youtube, Mail, Phone, MapPin } from 'lucide-react';
 import whatsapp from './Assets/whatsapp.svg'
-import logo  from './Assets/Logo.png'
+import logo  from './Assets/Logo.png';
+import { RiWhatsappLine } from "react-icons/ri";
 
 const Footer = () => {
   return (
@@ -23,6 +24,9 @@ const Footer = () => {
               <a href="#" className="hover:text-red-400"><Linkedin size={25} /></a>
               <a href="https://www.instagram.com/fictionmaster.in?igsh=dTA3eHg0aDd1d3R6" className="hover:text-red-400"><Instagram size={25} /></a>
               <a href="#" className="hover:text-red-400"><Youtube size={25} /></a>
+              <a href="https://wa.me/917397273994" className="hover:text-red-400">
+                <RiWhatsappLine size={25} /> 
+              </a>
             </div>
           </div>
 
