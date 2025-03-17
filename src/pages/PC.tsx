@@ -3,6 +3,7 @@ import ProfileCard from '../components/ProfileCard';
 import profile from '../components/Assets/Profile.jpg';
 import md from '../components/Assets/MD.jpg';
 import FullStackDev from '../components/Assets/FullStackDev.jpg'
+import { Mail } from 'lucide-react';
 
 function PC() {
   // Sample employee data
@@ -17,7 +18,6 @@ function PC() {
         linkedin: 'https://linkedin.com/in/',
         github: 'https://github.com/',
         instagram: 'https://instagram.com/',
-        twitter: 'https://twitter.com/',
       },
     },
     {

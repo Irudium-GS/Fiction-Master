@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Instagram, Linkedin, MessageCircle, Twitter } from 'lucide-react';
+import { Mail, Github, Instagram, Linkedin, MessageCircle, Twitter } from 'lucide-react';
 
 interface ProfileCardProps {
   name: string;

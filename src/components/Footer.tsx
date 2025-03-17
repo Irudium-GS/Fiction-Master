@@ -21,7 +21,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4 mt-6">
               <a href="#" className="hover:text-red-400"><Linkedin size={25} /></a>
-              <a href="#" className="hover:text-red-400"><Instagram size={25} /></a>
+              <a href="https://www.instagram.com/fictionmaster.in?igsh=dTA3eHg0aDd1d3R6" className="hover:text-red-400"><Instagram size={25} /></a>
               <a href="#" className="hover:text-red-400"><Youtube size={25} /></a>
             </div>
           </div>
