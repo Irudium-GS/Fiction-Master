@@ -16,6 +16,7 @@ import {
   Rocket
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import LogoScroll from '../components/LogoScroll';
 
 function Home() {
   return (
@@ -42,13 +43,15 @@ function Home() {
       <section className="bg-gray-50 py-16">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <StatsCard icon={<Users />} number="500+" text="Happy Clients" />
-            <StatsCard icon={<Trophy />} number="1000+" text="Projects Completed" />
-            <StatsCard icon={<SmilePlus />} number="98%" text="Client Satisfaction" />
+            <StatsCard icon={<Users />} number="20+" text="Happy Clients" />
+            <StatsCard icon={<Trophy />} number="20+" text="Projects Completed" />
+            <StatsCard icon={<SmilePlus />} number="100%" text="Client Satisfaction" />
             <StatsCard icon={<Calendar />} number="Since 2024" text="Years of Excellence" />
           </div>
         </div>
       </section>
+
+
 
       {/* About Section */}
       <section className="py-20 bg-white">
@@ -161,62 +164,11 @@ function Home() {
         </div>
       </section>
 
-      {/* Client Logos */}
-      <section className="py-20 bg-white">
+{/* Trusted By Section */}
+      <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-16 text-black">Trusted By</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
-            {/* Fiction Master Logo */}
-            <div className="flex items-center justify-center p-4 hover:scale-110 transition-transform duration-300">
-              <svg className="w-32 h-32" viewBox="0 0 200 200" fill="none">
-                <path d="M40 40L160 40L100 160L40 40Z" fill="#EF4444" />
-                <path d="M100 160L160 40L160 160L100 160Z" fill="#4B5563" />
-              </svg>
-            </div>
-
-            {/* Google Logo */}
-            <div className="flex items-center justify-center p-4 hover:scale-110 transition-transform duration-300">
-              <div className="text-2xl font-bold">
-                <span className="text-blue-500">G</span>
-                <span className="text-red-500">o</span>
-                <span className="text-yellow-500">o</span>
-                <span className="text-blue-500">g</span>
-                <span className="text-green-500">l</span>
-                <span className="text-red-500">e</span>
-              </div>
-            </div>
-
-            {/* Microsoft Logo */}
-            <div className="flex items-center justify-center p-4 hover:scale-110 transition-transform duration-300">
-              <div className="grid grid-cols-2 gap-1">
-                <div className="w-8 h-8 bg-red-500"></div>
-                <div className="w-8 h-8 bg-green-500"></div>
-                <div className="w-8 h-8 bg-blue-500"></div>
-                <div className="w-8 h-8 bg-yellow-500"></div>
-              </div>
-            </div>
-
-            {/* Sony Logo */}
-            <div className="flex items-center justify-center p-4 hover:scale-110 transition-transform duration-300">
-              <div className="text-2xl font-bold tracking-wider">
-                SONY
-              </div>
-            </div>
-
-            {/* SpaceX Logo */}
-            <div className="flex items-center justify-center p-4 hover:scale-110 transition-transform duration-300">
-              <div className="text-2xl font-bold tracking-widest text-gray-800">
-                SPACE<span className="text-red-600">X</span>
-              </div>
-            </div>
-
-            {/* Zoho Logo */}
-            <div className="flex items-center justify-center p-4 hover:scale-110 transition-transform duration-300">
-              <div className="text-2xl font-bold text-blue-600">
-                ZOHO
-              </div>
-            </div>
-          </div>
+          <LogoScroll />
         </div>
       </section>
     </div>
@@ -246,3 +198,4 @@ function ServiceHighlight({ icon, text }) {
 }
 
 export default Home;
+

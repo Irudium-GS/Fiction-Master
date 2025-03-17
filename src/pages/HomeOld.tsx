@@ -112,8 +112,7 @@ const Home = () => {
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="relative"
-            >
+              className="relative">
               <div className="aspect-w-4 aspect-h-3">
                 <img
                   src={aboutImg}
