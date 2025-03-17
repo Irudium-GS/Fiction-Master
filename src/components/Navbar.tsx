@@ -4,6 +4,7 @@ import { Menu, X } from 'lucide-react';
 import { motion } from 'framer-motion';
 import logo from './Assets/Logo.png';
 import CartIcon from './CartIcon';
+import WUC from "../pages/WorkUnderConstruction";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +24,8 @@ const Navbar = () => {
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
     { name: 'Services', path: '/services' },
-    { name: 'Download', path: '/Download' },
+    // { name: 'Download', path: '/Download' },
+    { name: 'Download', path: '/WorkUnderConstruction' },
     { name: 'Contact', path: '/contact' },
   ];
 
@@ -64,24 +66,23 @@ const Navbar = () => {
             ))}
             
             {/* Cart Icon */}
-            <CartIcon />
+            {/* <CartIcon /> */}
             
             {/* Login Button (Visible only in Desktop) */}
-            <Link
+            {/* <Link
               to="/login"
-              className="px-4 py-2 bg-red-600 font-semibold text-white rounded-md hover:bg-red-700 transition-colors tracking-wide"
-            >
+              className="px-4 py-2 bg-red-600 font-semibold text-white rounded-md hover:bg-red-700 transition-colors tracking-wide">
               Login
-            </Link>
+            </Link> */}
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center space-x-4">
+          {/* <div className="md:hidden flex items-center space-x-4">
             <CartIcon />
             <button onClick={() => setIsOpen(!isOpen)} className="text-gray-300 hover:text-red-400">
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
-          </div>
+          </div> */}
         </div>
 
         {/* Mobile Menu (Login button removed) */}

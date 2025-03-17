@@ -78,11 +78,11 @@ function Home() {
                 <Link to="/digitalMarketing">
                   <ServiceHighlight icon={<MessageSquare />} text="Digital Marketing" />
                 </Link>
-                <Link to="/education">
+                <Link to="/WorkUnderConstruction">
                   <ServiceHighlight icon={<GraduationCap />} text="Education" />
                 </Link>
-                <Link to="/download">
-                  <ServiceHighlight icon={<ShoppingCart />} text="Products" />
+                <Link to="/WorkUnderConstruction">
+                  <ServiceHighlight icon={<ShoppingCart />} text="Products" /> 
                 </Link>
               </div>
             </div>
@@ -139,7 +139,7 @@ function Home() {
                 </div>
                 <h3 className="text-xl font-bold mb-4">Education</h3>
                 <p className="text-gray-600 mb-6">Professional courses and training programs to advance your career</p>
-                <Link to="/education" className="inline-flex items-center text-red-600 font-semibold hover:text-red-700">
+                <Link to="/WorkUnderConstruction" className="inline-flex items-center text-red-600 font-semibold hover:text-red-700">
                   Learn More
                   <Rocket className="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform duration-300" />
                 </Link>
@@ -154,7 +154,7 @@ function Home() {
                 </div>
                 <h3 className="text-xl font-bold mb-4">Products</h3>
                 <p className="text-gray-600 mb-6">Premium templates and design resources for your projects</p>
-                <Link to="/download" className="inline-flex items-center text-red-600 font-semibold hover:text-red-700">
+                <Link to="/WorkUnderConstruction" className="inline-flex items-center text-red-600 font-semibold hover:text-red-700">
                   Learn More
                   <Rocket className="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform duration-300" />
                 </Link>

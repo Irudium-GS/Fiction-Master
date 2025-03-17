@@ -13,6 +13,7 @@ import Cart from './pages/Cart'
 import { CartProvider } from './context/CartContext';
 import  Education  from './pages/Education';
 import  DigitalMarket  from './pages/ DigitalMarketing';
+import WUC from "./pages/WorkUnderConstruction";
 
 // import Dashboard from './components/Dashboard';
 // import DashboardHome from './pages/DashboardHome';
@@ -36,6 +37,7 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/education" element={ <Education/> }/>
           <Route path="/digitalMarketing" element={ <DigitalMarket/> }/>
+          <Route path="/WorkUnderConstruction" element={ <WUC/> } />
 
           {/* Dashboard Routes (Nested) */}
           {/* <Route path="/dashboard" element={<Dashboard/>}>

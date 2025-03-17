@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Facebook, Twitter, Instagram, Youtube, Mail, Phone, MapPin } from 'lucide-react';
+import { Linkedin, Instagram, Youtube, Mail, Phone, MapPin } from 'lucide-react';
 import whatsapp from './Assets/whatsapp.svg'
 import logo  from './Assets/Logo.png'
 
@@ -20,8 +20,7 @@ const Footer = () => {
               Empowering minds through innovative education and creative learning experiences.
             </p>
             <div className="flex space-x-4 mt-6">
-              <a href="#" className="hover:text-red-400"><Facebook size={25} /></a>
-              <a href="#" className="hover:text-red-400"><Twitter size={25} /></a>
+              <a href="#" className="hover:text-red-400"><Linkedin size={25} /></a>
               <a href="#" className="hover:text-red-400"><Instagram size={25} /></a>
               <a href="#" className="hover:text-red-400"><Youtube size={25} /></a>
             </div>
@@ -33,7 +32,7 @@ const Footer = () => {
               <li><Link to="/" className="hover:text-red-400">Home</Link></li>
               <li><Link to="/about" className="hover:text-red-400">About Us</Link></li>
               <li><Link to="/services" className="hover:text-red-400">Services</Link></li>
-              <li><Link to="/courses" className="hover:text-red-400">Courses</Link></li>
+              {/* <li><Link to="/courses" className="hover:text-red-400">Courses</Link></li> */}
               <li><Link to="/contact" className="hover:text-red-400">Contact</Link></li>
             </ul>
           </div>
